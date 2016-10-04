@@ -132,14 +132,35 @@ body{
 
 /*************** Layer 1 Right Bar **************/
 
-.RightBarOdd{
+.RightBarOdd, .NavIcons{
 	height: 100%;
 	width: 8%;
-	background-color: blue;
 	margin: 0;
 	display: inline-block;
 	float: right;
 }
+
+.EmptyIcon, .MoreIcon, .NotifIcon, .BehdadIcon{
+	display: inline-block;
+	position: absolute;
+	margin-top:  5px;
+}
+
+.EmptyIcon{
+	margin-left: 35px;
+}
+.MoreIcon{
+	margin-left: 75px;
+}
+.NotifIcon{
+	margin-left: 115px;
+}
+.BehdadIcon{
+	margin-left: 155px;
+}
+
+/*************** Layer 2 Left Bar **************/
+
 
 .LeftBarEven{
 	height: 100%;
