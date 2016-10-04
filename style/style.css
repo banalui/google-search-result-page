@@ -22,6 +22,7 @@ body{
 	height: 4.0%;
 	width: 100%;
 	min-height: 60px;
+	border-bottom : 1px solid #ebebeb;
 }
 
 .SearchStatLayer{				/* Layer 3 */
@@ -162,7 +163,7 @@ body{
 /*************** Layer 2 Left Bar **************/
 
 
-.LeftBarEven{
+.LeftBarEven, .LeftBarEmpty{
 	height: 100%;
 	width: 5%;
 	background-color: orange;
@@ -172,6 +173,16 @@ body{
 	position: relative;
 }
 
+/*************** Layer 2 Mid Bar **************/
+
+.SearchFilterBar{
+	height: 100%;
+	width: 87%;
+	background-color: white;
+	margin: 0;
+	display: inline-block;
+}
+
 .MidBarEven{
 	height: 100%;
 	width: 87%;
@@ -179,6 +190,126 @@ body{
 	margin: 0;
 	display: inline-block;
 }
+
+.SearchFilterButtonsAll, .SearchFilterButtonsVideos, .SearchFilterButtonsNews, .SearchFilterButtonsShopping, .SearchFilterButtonsMaps, .SearchFilterButtonsMore, .SearchFilterButtonsTools{
+	margin-top: 24px;
+	position: absolute;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 0;
+	width: 80px;
+}
+
+.SearchFilterBar a{
+	text-decoration: none;
+	color: #777;
+}
+
+.SearchFilterBar a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.SearchFilterButtonsAll a{
+	color: #4285f4;
+	font-weight: bold;
+}
+
+.SearchFilterButtonsAll a:hover{
+	color: #4285f4;
+	font-weight: bold;
+}
+
+.SearchFilterButtonsAll{
+	margin-left: 0px;
+	height: 33px;
+	border-bottom : 3px #4285f4 solid;
+	width: 23px;
+	padding-left: 10px;
+}
+
+.SearchFilterButtonsVideos{
+	margin-left: 70px;
+}
+.SearchFilterButtonsNews{
+	margin-left: 150px;
+}
+.SearchFilterButtonsShopping{
+	margin-left: 220px;
+}
+.SearchFilterButtonsMaps{
+	margin-left: 310px;
+}
+.SearchFilterButtonsMore{
+	margin-left: 380px;
+}
+.SearchFilterButtonsTools{
+	margin-left: 445px;
+	width: 85px;
+	padding-left: 10px;
+	height: 25px;
+	padding-top: 9px;
+	margin-top: 15.5px;
+}
+
+.SearchFilterButtonsTools:hover{
+	background-color: #f8f8f8;
+	border-radius: 3px;
+	border : 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.SearchFilterButtonsTools a:hover{
+	color: #777;
+}
+
+/*
+.SearchAllButton, .SearchVideosButton, .SearchNewsButton, .SearchShoppingButton{
+	display: inline;
+	position: absolute;
+	margin-top:  5px;
+}
+
+.SearchAllButton{
+	margin-left: 5px;
+	width: 100px;
+	height: 100px;
+}
+.SearchVideosButton{
+	margin-left: 55px;
+	width: 100px;
+	height: 100px;
+}
+.SearchNewsButton{
+	margin-left: 105px;
+	width: 100px;
+	height: 100px;
+}
+.SearchShoppingButton{
+	margin-left: 155px;
+	width: 100px;
+	height: 100px;
+}
+*/
+/*
+<div class="SearchAllButton">All</div>
+					<div class="SearchVideosButton">Videos</div>
+					<div class="SearchNewsButton">News</div>
+					<div class="SearchShoppingButton">Shopping</div>
+					<div class="SearchMapsButton">Maps</div>
+					<div class="SearchMoreButton">More</div>
+					<div class="SearchToolsButton">Search Tools</div>
+*/
+.LeftBarEmpty{
+	background-color: white;
+}
+
+.LeftBarEmptyWBorder{
+	border-bottom : 1px solid #ebebeb;
+	height: 99%;
+}
+
+
 
 .RightBarEven{
 	height: 100%;
