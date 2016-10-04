@@ -18,7 +18,7 @@ body{
 }
 
 .SearchFilterLayer{				/* Layer 2 */
-	background-color: red;
+	background-color: white;
 	height: 4.0%;
 	width: 100%;
 	min-height: 60px;
@@ -26,45 +26,45 @@ body{
 }
 
 .SearchStatLayer{				/* Layer 3 */
-	background-color: black;
+	background-color: white;
 	height: 2.8%;
 	width: 100%;
 	min-height: 30px;
 }
 
 .ResultListLayer{				/* Layer 4 */
-	background-color: beige;
+	background-color: white;
 	height: 66.0%;
 	width: 100%;
 }
 
 .RelatedSearchLayer{			/* Layer 5 */
-	background-color: gray;
+	background-color: white;
 	height: 9.6%;
 	width: 100%;
 }
 
 .LogoButtonsLayer{				/* Layer 6 */
-	background-color: yellow;
+	background-color: white;
 	height: 4.7%;
 	width: 100%;
 }
 
 .NumberBottonsLayer{			/* Layer 7 */
-	background-color: orange;
+	background-color: white;
 	height: 3.1%;
 	width: 100%;
 }
 
 .LocationInfoLayer{				/* Layer 8 */
-	background-color: navy;
+	background-color: white;
 	height: 3.1%;
 	width: 100%;
 	background-color: #f2f2f2;
 }
 
 .FooterLayer{					/* Layer 9 */
-	background-color: pink;
+	background-color: white;
 	height: 2.5%;
 	width: 100%;
 }
@@ -171,14 +171,6 @@ body{
 	height: 100%;
 	width: 87%;
 	background-color: white;
-	margin: 0;
-	display: inline-block;
-}
-
-.MidBarEven{
-	height: 100%;
-	width: 87%;
-	background-color: red;
 	margin: 0;
 	display: inline-block;
 }
@@ -298,7 +290,7 @@ body{
 /*************** Layer 3 Mid Bar *************/
 
 
-.MidBarOdd, .ResultStatLine{
+.MidBarOdd, .ResultStatLine, .RelatedSearches{
 	height: 100%;
 	width: 87%;
 	background-color: beige;
@@ -324,3 +316,101 @@ body{
 .RightBarEmpty{
 	background-color: white;
 }
+
+/*************** Layer 4 Mid Bar *************/
+
+.SearchResult{
+	color: #1a0dab;
+	font-family: arial,sans-serif;
+	font-size: 18px;
+	padding-left: 14px;
+	margin: 8px 2px 2px 2px;
+	text-decoration: none;
+}
+
+.SearchResult:hover{
+	text-decoration: underline;
+}
+
+.SearchLink{
+	color: #006621;
+	font-family: arial,sans-serif; 
+	font-size: 14px;
+	padding-left: 14px;
+	margin: 2px 2px 2px 2px;
+}
+
+.SearchInfo{
+	color : #545454;
+	font-family: arial,sans-serif;
+	font-size: small;
+	width: 600px;
+	padding-left: 14px;
+	margin: 3px 3px 22px 2px;
+	line-height: 17px;
+}
+
+.MidBarEven, .ResultList{
+	height: 100%;
+	width: 87%;
+	background-color: red;
+	display: inline-block;
+}
+
+.ResultList{
+	background-color: white;
+}
+
+.SearchLink a{
+	color : #777;
+	text-decoration: none;
+}
+
+
+.RelatedSearches{
+	background-color: white;
+	border-top: 1px rgba(0,0,0,0.07) solid;
+	border-bottom: 1px blue solid;
+	margin-top: 15px;
+	width: 600px;
+	margin-left: 10px;
+}
+
+.RelatedSearchesHeading{
+	font-size: 18px;
+	color: #808080;
+	font-family: arial,sans-serif;
+	padding-top: 1px;
+	padding-left: 1px;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.RelatedLinks{
+	text-decoration: none;
+	color: #1a0dab;
+	font-size: 13px;
+	font-family: arial,sans-serif;
+	padding-left: 10px;
+	line-height: 10px;
+	display: inline-block;
+	margin : 5px;
+}
+
+.RelatedLinks:hover{
+	text-decoration: underline;
+}
+
+ul{
+	column-count : 2;
+	column-gap: 8px;
+	margin-top: 5px;
+	padding: 0;
+}
+
+
+/*#1a0dab*/
+
+/* font-family: arial,sans-serif;  font-size: 18px; */
+
