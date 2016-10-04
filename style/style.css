@@ -104,14 +104,6 @@ body{
 	font-family: Verdana, Courier;
 }
 
-.MidBarOdd{
-	height: 100%;
-	width: 87%;
-	background-color: beige;
-	margin: 0;
-	display: inline-block;
-}
-
 .SearchBar{
 	margin-top: 10px;
 	margin-right: auto;
@@ -133,7 +125,7 @@ body{
 
 /*************** Layer 1 Right Bar **************/
 
-.RightBarOdd, .NavIcons{
+.RightBarOdd, .NavIcons, .RightBarEmpty{
 	height: 100%;
 	width: 8%;
 	margin: 0;
@@ -301,4 +293,34 @@ body{
 }
 .SettingIcon{
 	margin-left: 119px;
+}
+
+/*************** Layer 3 Mid Bar *************/
+
+
+.MidBarOdd, .ResultStatLine{
+	height: 100%;
+	width: 87%;
+	background-color: beige;
+	margin: 0;
+	display: inline-block;
+}
+
+.ResultStatLine{
+	margin-top: 0;
+	background-color: white;
+	font-family: Arial;
+	font-size: 13px;
+	color: #777;
+	display: inline-block;
+}
+
+.ResultStatLine p{
+	padding-left: 12px;
+}
+
+/*************** Layer 3 Right Bar *************/
+
+.RightBarEmpty{
+	background-color: white;
 }
