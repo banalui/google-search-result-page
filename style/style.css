@@ -1,0 +1,169 @@
+body{
+	margin: 0;
+}
+
+.Container{
+	width: 100%;
+	height: 120%;
+	position: absolute;
+	margin: 0;
+	background-color: #f2f2f2;
+}
+
+.SearchBarLayer{				/* Layer 1 */
+	height: 4.1%;
+	width: 100%;
+	background-color: #f2f2f2;
+	min-height: 55px;
+}
+
+.SearchFilterLayer{				/* Layer 2 */
+	background-color: red;
+	height: 4.0%;
+	width: 100%;
+	min-height: 60px;
+}
+
+.SearchStatLayer{				/* Layer 3 */
+	background-color: black;
+	height: 2.8%;
+	width: 100%;
+	min-height: 30px;
+}
+
+.ResultListLayer{				/* Layer 4 */
+	background-color: beige;
+	height: 66.0%;
+	width: 100%;
+}
+
+.RelatedSearchLayer{			/* Layer 5 */
+	background-color: gray;
+	height: 9.6%;
+	width: 100%;
+}
+
+.LogoButtonsLayer{				/* Layer 6 */
+	background-color: yellow;
+	height: 4.7%;
+	width: 100%;
+}
+
+.NumberBottonsLayer{			/* Layer 7 */
+	background-color: orange;
+	height: 3.1%;
+	width: 100%;
+}
+
+.LocationInfoLayer{				/* Layer 8 */
+	background-color: navy;
+	height: 3.1%;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.FooterLayer{					/* Layer 9 */
+	background-color: pink;
+	height: 2.5%;
+	width: 100%;
+}
+
+/*************** Layer 1 Left Bar **************/
+
+.LeftBarOdd, .GoogleLogoButtonTop{
+	height: 100%;
+	width: 5%;
+	background-color: yellow;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	position: relative;
+	
+}
+
+.GoogleLogoButtonTop{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f2f2f2;
+}
+
+.GoogleLogoButtonTop a{
+    margin-top: 10px;
+}
+
+/*************** Layer 1 Mid Bar **************/
+
+
+
+.SearchBar input{
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-family: Verdana, Courier;
+}
+
+.MidBarOdd{
+	height: 100%;
+	width: 87%;
+	background-color: beige;
+	margin: 0;
+	display: inline-block;
+}
+
+.SearchBar{
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 580px;
+	height: 32px;
+	position: absolute;
+	display: inline-block;
+}
+
+.SearchButton{
+	position: absolute;
+	display: inline-block;
+	margin-left: 586px;
+	height: 34px;
+	width: 33px;
+	margin-top: 10px;
+}
+
+/*************** Layer 1 Right Bar **************/
+
+.RightBarOdd{
+	height: 100%;
+	width: 8%;
+	background-color: blue;
+	margin: 0;
+	display: inline-block;
+	float: right;
+}
+
+.LeftBarEven{
+	height: 100%;
+	width: 5%;
+	background-color: orange;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.MidBarEven{
+	height: 100%;
+	width: 87%;
+	background-color: red;
+	margin: 0;
+	display: inline-block;
+}
+
+.RightBarEven{
+	height: 100%;
+	width: 8%;
+	background-color: green;
+	margin: 0;
+	display: inline-block;
+	float: right;
+}
