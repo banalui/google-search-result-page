@@ -263,43 +263,6 @@ body{
 	color: #777;
 }
 
-/*
-.SearchAllButton, .SearchVideosButton, .SearchNewsButton, .SearchShoppingButton{
-	display: inline;
-	position: absolute;
-	margin-top:  5px;
-}
-
-.SearchAllButton{
-	margin-left: 5px;
-	width: 100px;
-	height: 100px;
-}
-.SearchVideosButton{
-	margin-left: 55px;
-	width: 100px;
-	height: 100px;
-}
-.SearchNewsButton{
-	margin-left: 105px;
-	width: 100px;
-	height: 100px;
-}
-.SearchShoppingButton{
-	margin-left: 155px;
-	width: 100px;
-	height: 100px;
-}
-*/
-/*
-<div class="SearchAllButton">All</div>
-					<div class="SearchVideosButton">Videos</div>
-					<div class="SearchNewsButton">News</div>
-					<div class="SearchShoppingButton">Shopping</div>
-					<div class="SearchMapsButton">Maps</div>
-					<div class="SearchMoreButton">More</div>
-					<div class="SearchToolsButton">Search Tools</div>
-*/
 .LeftBarEmpty{
 	background-color: white;
 }
@@ -309,13 +272,33 @@ body{
 	height: 99%;
 }
 
+/*************** Layer 2 Right Bar **************/
 
-
-.RightBarEven{
+.RightBarEven, .SearchFilterIcons{
 	height: 100%;
 	width: 8%;
 	background-color: green;
 	margin: 0;
 	display: inline-block;
 	float: right;
+}
+
+.SearchFilterIcons{
+	background-color: white;
+}
+
+.PrivateIcon, .GlobalIcon, .SettingIcon{
+	display: inline-block;
+	position: absolute;
+	margin-top:  15px;
+}
+
+.PrivateIcon{
+	margin-left: 10px;
+}
+.GlobalIcon{
+	margin-left: 53px;
+}
+.SettingIcon{
+	margin-left: 119px;
 }
