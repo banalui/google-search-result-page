@@ -44,15 +44,9 @@ body{
 	width: 100%;
 }
 
-.LogoButtonsLayer{				/* Layer 6 */
+.LogoButtonsLayer{				/* Layer 6 and 7 */
 	background-color: white;
-	height: 4.7%;
-	width: 100%;
-}
-
-.NumberBottonsLayer{			/* Layer 7 */
-	background-color: white;
-	height: 3.1%;
+	height: 7.8%;
 	width: 100%;
 }
 
@@ -350,11 +344,15 @@ body{
 	line-height: 17px;
 }
 
-.MidBarEven, .ResultList{
+.MidBarEven, .ResultList, .GoogleButtons{
 	height: 100%;
 	width: 87%;
 	background-color: red;
 	display: inline-block;
+}
+
+.GoogleButtons{
+	background-color: white;
 }
 
 .ResultList{
@@ -370,7 +368,7 @@ body{
 .RelatedSearches{
 	background-color: white;
 	border-top: 1px rgba(0,0,0,0.07) solid;
-	border-bottom: 1px blue solid;
+	border-bottom: 1px rgba(0,0,0,0.07) solid;
 	margin-top: 15px;
 	width: 600px;
 	margin-left: 10px;
@@ -409,8 +407,46 @@ ul{
 	padding: 0;
 }
 
+.GoogleO, .GoogleORed, .GoogleO10{
+	border : 4px #f4c242 solid;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: 35px;
+}
 
-/*#1a0dab*/
+.GoogleORed{
+	border : 4px #f44242 solid;
+	margin-left: 180px;
+}
 
-/* font-family: arial,sans-serif;  font-size: 18px; */
+.NumberButtons, .NumberButtons10{
+	position: relative;
+	width: 10px;
+	height: 20px;
+	margin: 30px 0 0 2px;
+	font-family: arial, sans-serif;
+	font-size: small;
+	color: #4285f4;
+}
+
+.NumberButtons a{
+	text-decoration: none;
+}
+
+.NumberButtons10:hover a:hover{
+	text-decoration: underline;
+}
+
+.GoogleO:hover a, .GoogleORed:hover a{
+	text-decoration: underline;
+}
+
+.NumberButtons10 a{
+	text-decoration: none;
+}
+.NumberButtons10{
+	margin: 30px 0 0 0px;
+}
 
