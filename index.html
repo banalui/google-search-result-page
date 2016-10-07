@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Google Search Result</title>
-		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/normalize.css" />
+		<link rel="stylesheet" href="style/style2.css" />
 	</head>
 	<body>
 		<div class="Container">
-			<div class="SearchBarLayer">  		<!-- Layer 1 -->
+			<div class="SearchBarLayer"> 		<!-- Layer 1 -->
 				<div class="GoogleLogoButtonTop">
-					<a href="http://www.google.com"><img src="images/google_logo.png"></a>
+					<img src="images/google_logo.png">
 				</div>
 				<div class="SearchBar">
 					<input type="text">
@@ -24,9 +25,6 @@
 				</div>
 			</div>
 			<div class="SearchFilterLayer">  	<!-- Layer 2 -->
-				<div class="LeftBarEmpty">
-					<div class="LeftBarEmptyWBorder"></div>
-				</div>
 				<div class="SearchFilterBar">
 					<div class="SearchFilterButtonsAll">
 						<a href="http://www.google.com">All</a>
@@ -57,20 +55,11 @@
 				</div>
 			</div>
 			<div class="SearchStatLayer">  		<!-- Layer 3 -->
-				<div class="LeftBarEmpty">
-					
-				</div>
 				<div class="ResultStatLine">
 					<p>About 2,070,000 results (0.61 seconds)</p>
 				</div>
-				<div class="RightBarEmpty">
-					
-				</div>
 			</div>
 			<div class="ResultListLayer">  		<!-- Layer 4 -->
-				<div class="LeftBarEmpty">
-					
-				</div>
 				<div class="ResultList">
 					<a href="http://www.google.com" class="SearchResult">With zero coding experience, artist building 180 webpages in 180 days</a>
 						<p class="SearchLink">arstechnica.com/.../with-zero-coding-experience-artist-building-180-web...  <a href="http://www.google.com">Ars Technica</a></p>
@@ -129,16 +118,11 @@
 						<p class="SearchLink">www.nyctechclub.com/how-to-build-a-wordpress-website-2016-updated/</p>
 						<p class="SearchInfo">This is the latest and greatest <strong>website</strong> tutorial I have created on how to make a wordpress <strong>website</strong>. It uses a free wordpress theme and I show you how to <strong>build</strong> ...</p>
 				</div>
-				<div class="RightBarEmpty">
-				</div>
 			</div>
 			<div class="RelatedSearchLayer">  	<!-- Layer 5 -->
-				<div class="LeftBarEmpty">
-					
-				</div>
 				<div class="RelatedSearches">
 					<p class="RelatedSearchesHeading">Searches related to build this webpage</p>
-					<ul style="list-style-type:none">
+					<ul>
 						<li><a href="http://www.google.com" class="RelatedLinks">how to <strong>build</strong> a website</a></li>
 						<li><a href="http://www.google.com" class="RelatedLinks"><strong>how to</strong> build <strong>a</strong> webpage <strong>for free</strong></a></li>
 						<li><a href="http://www.google.com" class="RelatedLinks">build <strong>a</strong> webpage <strong>google</strong></a></li>
@@ -149,49 +133,34 @@
 						<li><a href="http://www.google.com" class="RelatedLinks"><strong>how to</strong> build <strong>a</strong> webpage <strong>using html</strong></a></li>
 					</ul>
 				</div>
-				<div class="RightBarEmpty">
-				</div>
 			</div>
 			<div class="LogoButtonsLayer">  	<!-- Layer 6 and 7-->
-				<div class="LeftBarEmpty">
-					
-				</div>
 				<div class="GoogleButtons">
-					<div class="GoogleORed"><div class="NumberButtons"><a href="http://www.google.com">1</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">2</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">3</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">4</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">5</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">6</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">7</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">8</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com">9</a></div></div>
-					<div class="GoogleO"><div class="NumberButtons10"><a href="http://www.google.com">10</a></div></div>
-				</div>
-				<div class="RightBarEmpty">
+					<img src="images/g_button.png" class="NoButtonImage">
+					<div class="OButtons">
+						<div class="GoogleORed"><div class="NumberButtons"> 1</div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 2</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 3</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 4</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 5</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 6</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 7</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 8</a></div></div>
+						<div class="GoogleO"><div class="NumberButtons"><a href="http://www.google.com"> 9</a></div></div>
+						<div class="GoogleO10"><div class="NumberButtons10"><a href="http://www.google.com">10</a></div></div>
+					</div>
+					<div class="ButtonImage"><a href="http://www.google.com"><img src="images/next_button.png" /></a></div>
 				</div>
 			</div>
 			<div class="LocationInfoLayer">  	<!-- Layer 8 -->
-				<div class="LeftBarEven">
-					Left Bar
-				</div>
-				<div class="MidBarEven">
-					Mid Bar
-				</div>
-				<div class="RightBarEven">
-					Right Bar
-				</div>
-			</div>
-			<div class="FooterLayer">  			<!-- Layer 9 -->
-				<div class="LeftBarOdd">
-					Left Bar
-				</div>
-				<div class="MidBarOdd">
-					Mid Bar
-				</div>
-				<div class="RightBarOdd">
-					Right Bar
-				</div>
+				<span ><div class="LocationCircle"></div></span>
+				<span class="LocationText">San Jose, CA - From your Internet address -</span>
+				<span class="LocationButton"><a href="http://www.google.com">Use precise location</a></span> -
+				<span class="LocationButton"><a href="http://www.google.com">Learn more</a></span><br><br>
+				<span class="FooterButtons">Help</span>
+				<span class="FooterButtons">Send feedback</span>
+				<span class="FooterButtons">Privacy</span>
+				<span class="FooterButtons">Terms</span>
 			</div>
 		</div>
 	</body>

@@ -1,181 +1,71 @@
-body{
+*{
 	margin: 0;
+	padding: 0;
+}
+
+div{
+	display: inline-block;
 }
 
 .Container{
-	width: 100%;
-	height: 120%;
-	position: absolute;
-	margin: 0;
+	display: block;
+}
+
+.SearchBarLayer{
 	background-color: #f2f2f2;
+	height: 60px;
+	display: block;
+	border-bottom : 1px solid rgb(229, 229, 229);
 }
 
-.SearchBarLayer{				/* Layer 1 */
-	height: 4.1%;
-	width: 100%;
-	background-color: #f2f2f2;
-	min-height: 55px;
-}
-
-.SearchFilterLayer{				/* Layer 2 */
-	background-color: white;
-	height: 4.0%;
-	width: 100%;
-	min-height: 60px;
-	border-bottom : 1px solid #ebebeb;
-}
-
-.SearchStatLayer{				/* Layer 3 */
-	background-color: white;
-	height: 2.8%;
-	width: 100%;
-	min-height: 30px;
-}
-
-.ResultListLayer{				/* Layer 4 */
-	background-color: white;
-	height: 66.0%;
-	width: 100%;
-}
-
-.RelatedSearchLayer{			/* Layer 5 */
-	background-color: white;
-	height: 9.6%;
-	width: 100%;
-}
-
-.LogoButtonsLayer{				/* Layer 6 and 7 */
-	background-color: white;
-	height: 7.8%;
-	width: 100%;
-}
-
-.LocationInfoLayer{				/* Layer 8 */
-	background-color: white;
-	height: 3.1%;
-	width: 100%;
-	background-color: #f2f2f2;
-}
-
-.FooterLayer{					/* Layer 9 */
-	background-color: white;
-	height: 2.5%;
-	width: 100%;
-}
-
-/*************** Layer 1 Left Bar **************/
-
-.LeftBarOdd, .GoogleLogoButtonTop{
-	height: 100%;
-	width: 5%;
-	background-color: yellow;
-	margin: 0;
+.GoogleLogoButtonTop img{
+	margin-left: 15px;
+	margin-top: 15px;
 	display: inline-block;
-	float: left;
-	position: relative;
-	
 }
 
-.GoogleLogoButtonTop{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #f2f2f2;
-}
-
-.GoogleLogoButtonTop a{
-    margin-top: 10px;
-}
-
-/*************** Layer 1 Mid Bar **************/
-
-
-
-.SearchBar input{
-	width: 100%;
-	height: 100%;
-	font-size: 18px;
-	font-family: Verdana, Courier;
+.SearchBar, .SearchButton{
+	position: absolute;
 }
 
 .SearchBar{
+	margin-left: 20px;
 	margin-top: 10px;
-	margin-right: auto;
-	margin-bottom: 0;
-	width: 580px;
-	height: 32px;
-	position: absolute;
-	display: inline-block;
+
 }
+
+.SearchBar input{
+	font-size: 20px;
+	font-family: arial, sans-serif;
+	width: 580px;
+	height: 35px;
+	padding-left: 10px;
+}
+
 
 .SearchButton{
-	position: absolute;
-	display: inline-block;
-	margin-left: 586px;
-	height: 34px;
-	width: 33px;
+	margin-left: 614px;
 	margin-top: 10px;
 }
 
-/*************** Layer 1 Right Bar **************/
 
-.RightBarOdd, .NavIcons, .RightBarEmpty{
-	height: 100%;
-	width: 8%;
-	margin: 0;
-	display: inline-block;
+.NavIcons{
 	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
 }
 
-.EmptyIcon, .MoreIcon, .NotifIcon, .BehdadIcon{
-	display: inline-block;
-	position: absolute;
-	margin-top:  5px;
+.SearchFilterLayer{				/* Layer 2 */
+	border-bottom : 1px solid #ebebeb;
+	display: block;
+	height: 65px;
 }
-
-.EmptyIcon{
-	margin-left: 5px;
-}
-.MoreIcon{
-	margin-left: 55px;
-}
-.NotifIcon{
-	margin-left: 105px;
-}
-.BehdadIcon{
-	margin-left: 155px;
-}
-
-/*************** Layer 2 Left Bar **************/
-
-
-.LeftBarEven, .LeftBarEmpty{
-	height: 100%;
-	width: 5%;
-	background-color: orange;
-	margin: 0;
-	display: inline-block;
-	float: left;
-	position: relative;
-}
-
-/*************** Layer 2 Mid Bar **************/
 
 .SearchFilterBar{
-	height: 100%;
-	width: 87%;
-	background-color: white;
-	margin: 0;
-	display: inline-block;
-}
-
-.SearchFilterButtonsAll, .SearchFilterButtonsVideos, .SearchFilterButtonsNews, .SearchFilterButtonsShopping, .SearchFilterButtonsMaps, .SearchFilterButtonsMore, .SearchFilterButtonsTools{
-	margin-top: 24px;
-	position: absolute;
-	font-family: Arial;
-	font-size: 13px;
-	padding: 0;
-	width: 80px;
+	float: left;
+	margin-left: 130px;
+	margin-top: 14px;
+	margin-right: 10px;
 }
 
 .SearchFilterBar a{
@@ -198,14 +88,6 @@ body{
 	font-weight: bold;
 }
 
-.SearchFilterButtonsAll{
-	margin-left: 0px;
-	height: 33px;
-	border-bottom : 3px #4285f4 solid;
-	width: 23px;
-	padding-left: 10px;
-}
-
 .SearchFilterButtonsVideos{
 	margin-left: 70px;
 }
@@ -221,13 +103,23 @@ body{
 .SearchFilterButtonsMore{
 	margin-left: 380px;
 }
+
+.SearchFilterButtonsAll, .SearchFilterButtonsVideos, .SearchFilterButtonsNews, .SearchFilterButtonsShopping, .SearchFilterButtonsMaps, .SearchFilterButtonsMore, .SearchFilterButtonsTools{
+	margin-top: 12px;
+	position: absolute;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 0;
+	width: 80px;
+}
+
 .SearchFilterButtonsTools{
 	margin-left: 445px;
 	width: 85px;
 	padding-left: 10px;
 	height: 25px;
 	padding-top: 9px;
-	margin-top: 15.5px;
+	margin-top: 3px;
 }
 
 .SearchFilterButtonsTools:hover{
@@ -241,77 +133,67 @@ body{
 	color: #777;
 }
 
-.LeftBarEmpty{
-	background-color: white;
-}
 
-.LeftBarEmptyWBorder{
-	border-bottom : 1px solid #ebebeb;
-	height: 99%;
-}
-
-/*************** Layer 2 Right Bar *************/
-
-.RightBarEven, .SearchFilterIcons{
-	height: 100%;
-	width: 8%;
-	background-color: green;
-	margin: 0;
+.SearchFilterIcons{
+	margin-right: 30px;
 	display: inline-block;
 	float: right;
 }
 
 .SearchFilterIcons{
 	background-color: white;
+	margin-left: 10px;
 }
 
-.PrivateIcon, .GlobalIcon, .SettingIcon{
-	display: inline-block;
-	position: absolute;
-	margin-top:  15px;
+.SearchFilterButtonsAll{
+	margin-left: 10px;
+}
+
+.SearchFilterButtonsAll{
+	margin-left: 0px;
+	height: 36px;
+	border-bottom : 3px #4285f4 solid;
+	width: 25px;
+	padding-left: 10px;
 }
 
 .PrivateIcon{
-	margin-left: 10px;
+	width: 38px;
 }
+
 .GlobalIcon{
-	margin-left: 53px;
+	width: 38px;
+	margin-right: 20px;
 }
+
 .SettingIcon{
-	margin-left: 119px;
+	margin-top: 17px;
 }
 
-/*************** Layer 3 Mid Bar *************/
-
-
-.MidBarOdd, .ResultStatLine, .RelatedSearches{
-	height: 100%;
-	width: 87%;
-	background-color: beige;
-	margin: 0;
-	display: inline-block;
+.SearchStatLayer{				/* Layer 3 */
+	background-color: white;
+	min-height: 30px;
+	display: block;
 }
 
 .ResultStatLine{
-	margin-top: 0;
+	display: inline-block;
 	background-color: white;
 	font-family: Arial;
 	font-size: 13px;
 	color: #777;
-	display: inline-block;
+	margin-top: 13px;
+	margin-left: 130px;
 }
 
 .ResultStatLine p{
 	padding-left: 12px;
 }
 
-/*************** Layer 3 Right Bar *************/
-
-.RightBarEmpty{
-	background-color: white;
+.ResultListLayer{
+	margin-left: 145px;
+	margin-top: 20px;
 }
-
-/*************** Layer 4 Mid Bar *************/
 
 .SearchResult{
 	color: #1a0dab;
@@ -344,26 +226,9 @@ body{
 	line-height: 17px;
 }
 
-.MidBarEven, .ResultList, .GoogleButtons{
-	height: 100%;
-	width: 87%;
-	background-color: red;
-	display: inline-block;
+.RelatedSearchLayer{
+	display: block;
 }
-
-.GoogleButtons{
-	background-color: white;
-}
-
-.ResultList{
-	background-color: white;
-}
-
-.SearchLink a{
-	color : #777;
-	text-decoration: none;
-}
-
 
 .RelatedSearches{
 	background-color: white;
@@ -371,7 +236,7 @@ body{
 	border-bottom: 1px rgba(0,0,0,0.07) solid;
 	margin-top: 15px;
 	width: 600px;
-	margin-left: 10px;
+	margin-left: 150px;
 }
 
 .RelatedSearchesHeading{
@@ -400,32 +265,53 @@ body{
 	text-decoration: underline;
 }
 
-ul{
+.RelatedSearches ul{
 	column-count : 2;
 	column-gap: 8px;
 	margin-top: 5px;
 	padding: 0;
+	list-style-type:none;
+	margin-bottom: 25px;
+}
+
+.GoogleButtons{
+	margin-left: 190px;
 }
 
 .GoogleO, .GoogleORed, .GoogleO10{
 	border : 4px #f4c242 solid;
-	width: 13px;
-	height: 13px;
+	width: 11px;
+	height: 11px;
 	border-radius: 50%;
 	display: inline-block;
-	margin-top: 35px;
+	margin-top: 40px;
+}
+
+.GoogleO10{
+	margin-left: 1px;
 }
 
 .GoogleORed{
 	border : 4px #f44242 solid;
-	margin-left: 180px;
+	/*margin-left: 180px;*/
+}
+
+.OButtons{
+	margin-left: 100px;
+	display: inline-block;
+	padding :0;
+}
+
+.NoButtonImage{
+	position: absolute;
+	margin: 27px 0px 0px 60px;
 }
 
 .NumberButtons, .NumberButtons10{
-	position: relative;
 	width: 10px;
 	height: 20px;
-	margin: 30px 0 0 2px;
+	margin: 26px 0 0 0px;
+	padding-left: 1px;
 	font-family: arial, sans-serif;
 	font-size: small;
 	color: #4285f4;
@@ -447,6 +333,52 @@ ul{
 	text-decoration: none;
 }
 .NumberButtons10{
-	margin: 30px 0 0 0px;
+	margin: 26px 0 0 0px;
+	padding-left: 0px;
 }
 
+.ButtonImage{
+	position: relative;
+	top : 4px;
+	right: 2px;
+}
+
+.LocationInfoLayer{
+	background-color: #f2f2f2;
+	height: 60px;
+	display: block;
+	margin-top: 30px;
+	border-top : 1px solid rgb(229, 229, 229);
+}
+
+.LocationInfoLayer{
+	padding-left: 150px;
+	padding-top: 30px;
+	font-family: arial,sans-serif;
+	font-size: small;
+	color: #aaa;
+}
+.LocationButton a{
+	color: #777;
+	text-decoration: none;
+}
+
+.LocationButton a:hover{
+	color: #333;
+}
+
+.FooterButtons{
+	color: #777;
+	font-family: arial,sans-serif;
+	font-size: small;
+	margin-right: 25px;
+	margin-top: 5px;
+}
+
+.LocationCircle{
+	background: #9e9e9e;
+	border-radius: 100%;
+	height: 10px;
+	width: 10px;
+	border : 1px #9e9e9e solid;
+}
